@@ -1,0 +1,27 @@
+name: hermes-free-model-verifier
+version: "0.1.0"
+description: "Manual, credential-scoped free-model discovery and tool-call verification for Hermes Agent. No background scans or automatic model switching."
+author: excuzivedeveloper
+kind: standalone
+requires_hermes: ">=0.21.0"
+license: MIT
+homepage: https://github.com/excuzivedeveloper/hermes-free-model-verifier
+tags: [models, free-tier, diagnostics, tool-calling]
+capabilities: []
+provides_tools: []
+provides_hooks: []
+provides_middleware: []
+python_dependencies: []
+optional_env:
+  - name: OPENROUTER_API_KEY
+    description: "Used only when manually verifying OpenRouter models."
+    secret: true
+  - name: NVIDIA_API_KEY
+    description: "Used only when manually verifying NVIDIA NIM models."
+    secret: true
+  - name: GOOGLE_API_KEY
+    description: "Used only when manually verifying Google Gemini models."
+    secret: true
+  - name: GEMINI_API_KEY
+    description: "Alternative Gemini key name."
+    secret: true

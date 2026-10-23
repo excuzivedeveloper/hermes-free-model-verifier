@@ -1,0 +1,36 @@
+# Secrets and local credentials — never commit
+.env
+.env.*
+*.env
+*.env.*
+auth.json
+*credentials*.json
+*secrets*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local Hermes state and scans
+.hermes/
+free-model-verifier.json
+free_model_verified.json
+cache.json
+config.yaml
+backups/
+logs/
+*.log
+*.sqlite*
+*.db
+
+# Developer and build artifacts
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+venv/
+.cache/
+*.bak
+*.backup
+*.zip
+.DS_Store
